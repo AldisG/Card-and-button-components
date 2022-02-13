@@ -1,0 +1,58 @@
+@import './shared.scss';
+
+.cards-notifications--input {
+  display: grid;
+  width: 100%;
+}
+.input-wrapper {
+  width: 100%;
+  position: relative;
+}
+.input-field,
+.button {
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.6rem;
+  border: none;
+}
+.button {
+  padding: 0.8rem 1.4rem;
+}
+.input-field {
+  width: 100%;
+  background-color: $veryLightGrey;
+  &:focus,
+  &:active {
+    outline: 1px solid $blue;
+    border: none;
+  }
+}
+.button {
+  background-color: $blue;
+  color: $white;
+  transition: background-color 0.2s, outline 0.2s;
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 20);
+  }
+  &:active {
+    background-color: lighten($blue, 10);
+  }
+}
+.input-field-button {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  padding: 0.8rem 1.2rem;
+  box-shadow: $buttonShadow;
+}
+// With BG pic
+.cards-with-pic {
+  gap: 2rem;
+}
+.title-photo-wrapper {
+  width: 100%;
+  & img {
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,10 @@
+.all-buttons-container--XL {
+  width: 100%;
+}
+.button-wrapper--xl {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}

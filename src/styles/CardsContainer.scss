@@ -1,0 +1,36 @@
+@import './shared.scss';
+
+.card-column-wrapper {
+  display: grid;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: $white;
+  border-radius: 1rem;
+  width: auto;
+}
+.all-cards-container {
+  display: flex;
+  justify-content: center;
+  background-color: $veryLightGrey;
+  min-height: 10rem;
+  min-width: 100%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.cards-notifications {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+}
+.cards-notifications__card-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1150px) {
+  .all-cards-container {
+    width: 30%;
+  }
+  .cards-notifications {
+    display: grid;
+  }
+}

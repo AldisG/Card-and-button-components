@@ -1,0 +1,70 @@
+@import './shared.scss';
+
+.custom-checkmark {
+  padding-top: 1rem;
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+}
+.new-checkmark {
+  width: 3rem;
+  height: 2rem;
+  border-radius: 10rem;
+  background-color: $lightGrey;
+  cursor: pointer;
+  position: relative;
+  // transition: left 0.2s;
+  &:hover,
+  &:focus {
+    width: 3rem;
+    height: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: $grey;
+  }
+  &::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.2rem;
+    transition: left 0.2s;
+  }
+}
+.custom-checkmark input:checked ~ .new-checkmark {
+  width: 3rem;
+  height: 2rem;
+  border-radius: 10rem;
+  background-color: lighten($blue, 10);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    width: 3rem;
+    height: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: $blue;
+  }
+  &::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 10rem;
+
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.2rem;
+  }
+}

@@ -1,0 +1,108 @@
+@import './shared.scss';
+
+.NotificationCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 1.4rem 2rem;
+  border-radius: 1rem;
+  background-color: $white;
+  box-shadow: $boxShadows;
+}
+
+.notification-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.notification__avatar-element {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  overflow: hidden;
+  background-color: $blue;
+
+  color: $white;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.notification__info-elements {
+  display: grid;
+  gap: 0.5rem;
+}
+.notification__header {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.all-cards-container {
+  max-width: max-content;
+}
+.cards-notifications__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards-notifications__h6 {
+  font-size: 1.4rem;
+}
+.notification__icon-wrapper {
+  padding: 0.6rem;
+  border-radius: 100rem;
+  border: none;
+  cursor: pointer;
+  outline: 0.1rem solid transparent;
+  transition: outline 0.2s;
+  &:hover,
+  &:focus {
+    outline: 0.1rem solid $blue;
+  }
+  &:active {
+    outline: 0.2rem solid $blue;
+  }
+}
+.notification__icon {
+  width: 2rem;
+  height: 2rem;
+}
+.notification__emoji {
+  padding: 1rem;
+}
+// Smile emojis
+.notification-wrapper--sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.smile-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.notification__header-small {
+  font-size: 1.2rem;
+  color: $grey;
+}
+.notification__sum {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.booster-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.booster-precent {
+  background-color: $lightGreen;
+  color: $green;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+}
+.booster-title {
+  font-size: 1rem;
+  color: $grey;
+}

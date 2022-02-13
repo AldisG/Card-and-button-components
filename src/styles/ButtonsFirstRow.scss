@@ -1,0 +1,54 @@
+@import './shared.scss';
+.all-buttons-container {
+  align-items: center;
+  background-color: $white;
+  border: 0.3rem dashed #7b61ff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  gap: 2rem;
+}
+.button--round,
+.button-light--round,
+.button-white--round,
+.button-white-dashed--round {
+  border-radius: 10rem;
+}
+.button-light,
+.button-light--round {
+  background-color: $lightBlue;
+  color: $blue;
+  &:hover,
+  &:focus {
+    outline: 0.2rem solid $blue;
+    background-color: $lightBlue;
+    color: $blue;
+  }
+}
+.button-white,
+.button-white--round {
+  background-color: $white;
+  outline: 1px solid $blue;
+  color: $blue;
+  &:hover,
+  &:focus {
+    outline: 0.2rem solid $blue;
+    background-color: $white;
+    color: $blue;
+  }
+}
+.button-white-dashed,
+.button-white-dashed--round {
+  background-color: $white;
+  outline: 0.18rem dashed $blue;
+  color: $blue;
+  &:hover,
+  &:focus {
+    outline: 0.2rem dashed $blue;
+    background-color: $white;
+    color: $blue;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../styles/shared.scss';
+.card-header-container {
+  padding-bottom: 1rem;
+}
+.card-header__title {
+  padding-bottom: 2rem;
+}
+.card-header_hr {
+  border: none;
+  border-bottom: 0.1rem solid $lightGrey;
+}
+.card-header__small-header {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  color: $orange;
+  font-weight: bold;
+}
+
+.card-header__paragraph {
+  color: $grey;
+}

@@ -1,0 +1,27 @@
+$black: #333;
+$white: #fff;
+$veryLightGrey: #edf2f7;
+$lightGrey: #d8dde2;
+$grey: #777;
+$orange: #df7d2d;
+$blue: #4c6fff;
+$lightBlue: #e1e8ff;
+$lightGreen: #deffee;
+$green: #66cb9f;
+$boxShadows: 0 0.2rem 0.4rem $lightGrey;
+$buttonShadow: 0 0 0.4rem $grey;
+.flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-button {
+  border: none;
+  outline: none;
+  color: darken($blue, 20);
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
