@@ -1,14 +1,51 @@
 @import './shared.scss';
+// Bubble icon
+.bubble-icon {
+  & svg {
+    width: 1.4rem;
+  }
+  & path {
+    fill: $blue;
+  }
+}
+.button-basic {
+  & path {
+    fill: $white;
+  }
+}
+// arrow icon
+.arrow-icon {
+  & path {
+    fill: none;
+    stroke: $blue;
+  }
+}
+.button-basic .arrow-icon {
+  & path {
+    fill: none;
+    stroke: $white;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 0;
+  padding: 2.2rem 2rem;
+  width: max-content;
+}
 .all-buttons-container {
+  align-items: center;
   align-items: center;
   background-color: $white;
   border: 0.3rem dashed #7b61ff;
-  padding: 2rem;
   margin-bottom: 2rem;
-  width: 100%;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 10rem);
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 10rem));
   gap: 2rem;
 }
 .button--round,
@@ -47,7 +84,7 @@
   color: $blue;
   &:hover,
   &:focus {
-    outline: 0.2rem dashed $blue;
+    outline: 0.3rem dashed $blue;
     background-color: $white;
     color: $blue;
   }
